@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webternet - The Practical Guide to Building Smarter Websites</title>
+  <meta name="description" content="Discover tools, guides, calculators, and workflows for launching, securing, automating, and growing your website." />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: #172033;
+      background: #f7f9fc;
+    }
+
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e9f0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #1f5eff;
+    }
+
+    nav a {
+      margin-left: 24px;
+      color: #172033;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 90px 7%;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 760px;
+      margin: 0 auto 32px;
+      color: #516078;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 14px 22px;
+      margin: 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: #1f5eff;
+      color: #ffffff;
+    }
+
+    .secondary {
+      background: #ffffff;
+      color: #1f5eff;
+      border: 1px solid #cbd8ff;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 42px;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: #5f6f89;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 26px;
+      border-radius: 16px;
+      border: 1px solid #e4e9f2;
+      box-shadow: 0 10px 24px rgba(20, 35, 70, 0.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #5f6f89;
+      line-height: 1.6;
+    }
+
+    .category-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .category {
+      background: #ffffff;
+      border: 1px solid #e4e9f2;
+      border-radius: 12px;
+      padding: 18px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 36px 7%;
+      text-align: center;
+      color: #6b7890;
+      background: #ffffff;
+      border-top: 1px solid #e5e9f0;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .category-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .grid,
+      .category-list {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 64px 7%;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Webternet</div>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#directory">Directory</a>
+      <a href="#guides">Guides</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>The practical guide to building smarter websites.</h1>
+      <p>
+        Discover the best tools, guides, and workflows for launching, securing,
+        automating, and growing your online business.
+      </p>
+      <div class="buttons">
+        <a href="#tools" class="primary">Explore Tools</a>
+        <a href="#directory" class="secondary">Compare Website Tools</a>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="section-heading">
+        <h2>Free website tools and calculators</h2>
+        <p>Simple utilities to help you plan, launch, check, and improve your website.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Domain Name Generator</h3>
+          <p>Generate brandable domain ideas based on your business name, niche, audience, or keyword.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hosting Cost Calculator</h3>
+          <p>Estimate hosting costs based on traffic, storage, email, backups, SSL, and support needs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Email DNS Checker</h3>
+          <p>Check MX, SPF, DKIM, and DMARC records to confirm your business email is configured correctly.</p>
+        </div>
+
+        <div class="card">
+          <h3>SSL Checker</h3>
+          <p>Verify whether your site has a valid SSL certificate and see when it expires.</p>
+        </div>
+
+        <div class="card">
+          <h3>Website Brief Generator</h3>
+          <p>Create a simple project brief for a website designer, developer, agency, or AI website builder.</p>
+        </div>
+
+        <div class="card">
+          <h3>AI Prompt Generator</h3>
+          <p>Generate prompts for homepage copy, landing pages, SEO articles, product pages, and FAQs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="directory">
+      <div class="section-heading">
+        <h2>Best tools for building and running websites</h2>
+        <p>Browse curated tools by category and find the right stack for your website.</p>
+      </div>
+
+      <div class="category-list">
+        <div class="category">Hosting</div>
+        <div class="category">Domains</div>
+        <div class="category">Email</div>
+        <div class="category">Website Builders</div>
+        <div class="category">Forms</div>
+        <div class="category">Payments</div>
+        <div class="category">Analytics</div>
+        <div class="category">AI Assistants</div>
+        <div class="category">SEO Tools</div>
+        <div class="category">Security</div>
+        <div class="category">Customer Support</div>
+        <div class="category">Automation</div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <div class="section-heading">
+        <h2>Popular website guides</h2>
+        <p>Practical playbooks for launching, improving, and growing your online presence.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>How to launch a business website</h3>
+          <p>A step-by-step checklist covering domains, hosting, email, content, forms, analytics, and security.</p>
+        </div>
+
+        <div class="card">
+          <h3>How to choose a hosting provider</h3>
+          <p>Compare shared hosting, WordPress hosting, VPS, cloud hosting, and managed hosting options.</p>
+        </div>
+
+        <div class="card">
+          <h3>How to use AI for your website</h3>
+          <p>Use AI to write copy, improve SEO, create landing pages, generate FAQs, and automate workflows.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Webternet.com — Tools, guides, and workflows for smarter websites.
+  </footer>
+</body>
+</html>
