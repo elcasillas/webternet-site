@@ -7,61 +7,108 @@ const tools = [
   {
     title: "Domain Name Generator",
     description:
-      "Generate brandable domain ideas based on your business name, niche, audience, or keyword.",
+      "Generate domain name ideas for a business website based on your niche, audience, offer, or target keyword.",
   },
   {
-    title: "Hosting Cost Calculator",
+    title: "Website Cost Calculator",
     description:
-      "Estimate hosting costs based on traffic, storage, email, backups, SSL, and support needs.",
+      "Estimate website costs across hosting, domains, email, backups, SSL, support, and maintenance.",
   },
   {
     title: "Website Launch Checklist",
     description:
-      "Review the essentials before going live, from DNS and analytics to backups and security headers.",
+      "Review the website checklist before going live, including DNS, analytics, forms, backups, SEO, and security.",
   },
   {
-    title: "Page Speed Audit Notes",
+    title: "Website Optimization Notes",
     description:
-      "Capture the fixes that usually move Lighthouse scores fastest without turning optimization into guesswork.",
+      "Track speed, content, accessibility, and conversion fixes that help improve a business website after launch.",
   },
   {
-    title: "SSL And Security Check",
+    title: "SSL And Security Checker",
     description:
-      "Spot missing certificates, mixed content, weak forms, and simple trust issues across your pages.",
+      "Check SSL, mixed content, forms, and basic trust signals before customers rely on your site.",
   },
   {
-    title: "SEO Basics Planner",
+    title: "SEO Tools Planner",
     description:
-      "Map titles, descriptions, headings, and internal links so your site structure is clear before publishing.",
+      "Map titles, descriptions, headings, internal links, and indexable pages before publishing.",
+  },
+  {
+    title: "Website Brief Generator",
+    description:
+      "Turn goals, audiences, pages, features, and content needs into a clear website planning brief.",
+  },
+  {
+    title: "AI Prompt Library",
+    description:
+      "Use AI prompts for website owners to draft page copy, compare tools, plan workflows, and improve updates.",
+  },
+  {
+    title: "Email DNS And Uptime Checks",
+    description:
+      "Keep track of email DNS, uptime, redirects, and domain and hosting issues that can affect launches.",
   },
 ];
 
 const categories = [
-  "Website Builders",
-  "Hosting Platforms",
-  "SEO Tools",
-  "Email And CRM",
-  "Analytics",
-  "Security",
-  "Automation",
-  "Content Systems",
+  {
+    title: "Website Builders",
+    description:
+      "Tools for building websites, landing pages, directories, and small business sites without unnecessary complexity.",
+  },
+  {
+    title: "Domain And Hosting Tools",
+    description:
+      "Domain, SSL, DNS, hosting comparison, and uptime tools for choosing and maintaining the right setup.",
+  },
+  {
+    title: "SEO Tools",
+    description:
+      "Research, metadata, content, and technical SEO tools for websites that need clearer structure and visibility.",
+  },
+  {
+    title: "Email And CRM",
+    description:
+      "Email DNS checker workflows, form routing, CRM capture, and follow-up tools for website owners.",
+  },
+  {
+    title: "Analytics",
+    description:
+      "Practical reporting tools for understanding traffic, conversions, content performance, and launch outcomes.",
+  },
+  {
+    title: "Security",
+    description:
+      "Website security checker resources for SSL, backups, spam prevention, permissions, and trust basics.",
+  },
+  {
+    title: "Automation",
+    description:
+      "Website automation tools for forms, notifications, publishing workflows, and repeatable owner tasks.",
+  },
+  {
+    title: "AI Website Tools",
+    description:
+      "AI website tools and prompts for briefs, page outlines, content improvements, and operations planning.",
+  },
 ];
 
 const guides = [
   {
     title: "Launch Smarter",
     description:
-      "A practical sequence for choosing a stack, setting up forms, configuring analytics, and publishing cleanly.",
+      "A practical website launch guide for entrepreneurs choosing a stack, setting up forms, configuring analytics, and publishing cleanly.",
   },
   {
-    title: "Secure The Basics",
+    title: "Choose Hosting Clearly",
     description:
-      "The short list of SSL, backups, spam prevention, and environment handling work that prevents common failures.",
+      "A plain-English path for how to choose website hosting based on traffic, support, email, backups, and total cost.",
   },
   {
     title: "Automate Repetitive Work",
     description:
-      "Connect forms, notifications, and follow-up workflows so the site keeps working after the first release.",
+      "Connect forms, notifications, content updates, and follow-up workflows so the site keeps working after the first release.",
   },
 ];
 
@@ -77,14 +124,15 @@ export default function HomePage() {
           <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="max-w-2xl">
               <p className="mb-4 inline-flex rounded-full border border-white/60 bg-white/70 px-3 py-1 text-sm font-semibold text-ocean shadow-soft backdrop-blur">
-                Practical tools, guides, and workflows
+                Website planning tools, checklists, and AI prompts
               </p>
               <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight sm:text-6xl">
-                The practical guide to building smarter websites.
+                Practical tools for building smarter websites.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-                Discover the best tools, guides, and workflows for launching,
-                securing, automating, and growing your online business.
+                Webternet helps entrepreneurs, small businesses, and website
+                owners plan, launch, manage, and improve better websites with
+                checklists, calculators, curated tools, and practical guides.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -108,7 +156,8 @@ export default function HomePage() {
                   Build
                 </p>
                 <p className="mt-3 text-2xl font-extrabold">
-                  Start with a clear stack and a site structure that scales.
+                  Start with a website planning guide, clear pages, and a stack
+                  that fits the business.
                 </p>
               </div>
               <div className="rounded-[1.75rem] border border-[#dce6ff] bg-mist p-5 shadow-soft">
@@ -116,7 +165,8 @@ export default function HomePage() {
                   Protect
                 </p>
                 <p className="mt-3 text-2xl font-extrabold">
-                  Handle forms, domains, SSL, and email with fewer blind spots.
+                  Handle domains, hosting, SSL, email DNS, and security with
+                  fewer blind spots.
                 </p>
               </div>
               <div className="rounded-[1.75rem] border border-[#dce6ff] bg-[#172033] p-5 text-white shadow-soft sm:col-span-2">
@@ -124,8 +174,8 @@ export default function HomePage() {
                   Grow
                 </p>
                 <p className="mt-3 max-w-xl text-2xl font-extrabold">
-                  Use calculators, checklists, and comparison guides to make
-                  faster decisions without bloated tooling.
+                  Use calculators, launch tools, AI prompts, and comparison
+                  guides to make faster website decisions.
                 </p>
               </div>
             </div>
@@ -137,8 +187,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="Utilities"
-            title="Free website tools and calculators"
-            description="Simple utilities to help you plan, launch, check, and improve your website."
+            title="Website tools for small business launches"
+            description="Simple utilities to help you plan a site, compare domain and hosting tools, run launch checks, and improve your website after it goes live."
           />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {tools.map((tool) => (
@@ -152,16 +202,18 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl rounded-[2rem] bg-white px-6 py-8 shadow-soft sm:px-8">
           <SectionHeading
             eyebrow="Directory"
-            title="Browse tools by category"
-            description="Compare the products and services most teams evaluate when they launch or rebuild a website."
+            title="Browse the best tools for websites by category"
+            description="Compare the products and services website owners evaluate when they plan, launch, optimize, automate, or rebuild a business website."
           />
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {categories.map((category) => (
-              <div
-                key={category}
-                className="rounded-2xl border border-line bg-cloud px-4 py-4 text-sm font-extrabold text-ink"
-              >
-                {category}
+              <div key={category.title} className="rounded-2xl border border-line bg-cloud px-4 py-4">
+                <h3 className="text-sm font-extrabold text-ink">
+                  {category.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate">
+                  {category.description}
+                </p>
               </div>
             ))}
           </div>
@@ -172,8 +224,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="Guides"
-            title="Practical guides for each stage"
-            description="Short, opinionated explanations for the decisions that matter when you are building and operating a site."
+            title="Practical website building guides for each stage"
+            description="Short, clear explanations for how to build a better website, choose the right tools, and keep improving after launch."
           />
           <div className="grid gap-5 lg:grid-cols-3">
             {guides.map((guide) => (
@@ -202,8 +254,8 @@ export default function HomePage() {
                 Need a custom website workflow?
               </h2>
               <p className="mt-3 text-base leading-7 text-white/70">
-                Use the submission page to collect project details and route
-                them through the included API layer.
+                Use the submission page to collect project details and turn the
+                next website setup checklist into a practical workflow.
               </p>
             </div>
             <Link
@@ -217,7 +269,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t border-line bg-white px-5 py-8 text-center text-sm text-slate sm:px-8 lg:px-12">
-        Webternet helps teams launch, secure, and grow smarter websites.
+        Webternet helps website owners plan, launch, secure, and grow smarter websites.
       </footer>
     </main>
   );
