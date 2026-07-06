@@ -15,7 +15,6 @@ Next.js marketing and lead-capture site with a small API layer for property subm
 
 ## Runtime And Integrations
 
-- Resend for email delivery from the property submission form
 - Cloudflare deployment via GitHub Actions
 - Local development on `http://127.0.0.1:3000`
 
@@ -30,8 +29,6 @@ Next.js marketing and lead-capture site with a small API layer for property subm
 ## Key Routes
 
 - `/` homepage
-- `/submit-property` property submission page
-- `/api/send-property-submission` submission API endpoint
 
 ## Environment Variables
 

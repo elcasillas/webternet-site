@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SectionHeading } from "@/components/section-heading";
 import { ToolCard } from "@/components/tool-card";
@@ -239,31 +238,6 @@ export default function HomePage() {
                 </p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-5 pb-16 pt-2 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl rounded-[2rem] bg-ink px-6 py-10 text-white sm:px-8">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
-                Next Step
-              </p>
-              <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
-                Need a custom website workflow?
-              </h2>
-              <p className="mt-3 text-base leading-7 text-white/70">
-                Use the submission page to collect project details and turn the
-                next website setup checklist into a practical workflow.
-              </p>
-            </div>
-            <Link
-              href="/submit-property"
-              className="inline-flex w-fit rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-ink transition hover:bg-mist"
-            >
-              Open Submission Page
-            </Link>
           </div>
         </div>
       </section>
