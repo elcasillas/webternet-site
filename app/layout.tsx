@@ -12,7 +12,7 @@ const siteDescription =
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://webternet.com"),
-  title: "Webternet | Practical Tools for Building Smarter Websites",
+  title: "WEBTERNET | Practical Tools for Building Smarter Websites",
   description: siteDescription,
   keywords: [
     "Webternet",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Webternet | Practical Tools for Building Smarter Websites",
+    title: "WEBTERNET | Practical Tools for Building Smarter Websites",
     description:
       "Discover practical website tools, launch checklists, calculators, curated resources, and AI prompts to help you build and improve smarter websites.",
     url: "https://webternet.com",
