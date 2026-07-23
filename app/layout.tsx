@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://webternet.com"),
   title: "WEBTERNET | Practical Tools for Building Smarter Websites",
   description: siteDescription,
+  icons: {
+    icon: "/webternet-logo-favico.png",
+    shortcut: "/webternet-logo-favico.png",
+    apple: "/webternet-logo-favico.png",
+  },
   keywords: [
     "Webternet",
     "website building guide",
